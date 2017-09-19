@@ -1,0 +1,47 @@
+{
+    "name": "liemphan/modules",
+    "description": "Modules with Admin Panel for Laravel",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Liem Phan",
+            "email": "minhliemphp@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "zizaco/entrust": "5.2.x-dev",
+      "laravelcollective/html":"^5.2.0",
+      "edvinaskrucas/notification": "5.1.*",
+      "unisharp/laravel-filemanager": "^1.7",
+      "yajra/laravel-datatables-oracle": "6.*",
+      "developeruz/laravel-analytics": "2.3.1"
+    },
+    "extra" : {
+      "laravel" : {
+        "providers" : [
+          "Unisharp\\Laravelfilemanager\\LaravelFilemanagerServiceProvider",
+          "Intervention\\Image\\ImageServiceProvider",
+          "Collective\\Html\\HtmlServiceProvider",
+          "Zizaco\\Entrust\\EntrustServiceProvider",
+          "Krucas\\Notification\\NotificationServiceProvider",
+          "Yajra\\Datatables\\DatatablesServiceProvider",
+          "developeruz\\Analytics\\AnalyticsServiceProvider"
+        ],
+        "aliases": {
+          "Image" : "Intervention\\Image\\Facades\\Image",
+          "Form" : "Collective\\Html\\FormFacade",
+          "Html" : "Collective\\Html\\HtmlFacade",
+          "Entrust"   : "Zizaco\\Entrust\\EntrustFacade",
+          "Datatables" : "Yajra\\Datatables\\Facades\\Datatables",
+          "Analytics" : "developeruz\\Analytics\\AnalyticsFacade"
+        }
+      }
+    },
+    "autoload": {
+        "psr-4": {
+    			"App\\Modules\\": "app/Modules"
+    		}
+    }
+}
