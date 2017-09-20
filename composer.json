@@ -9,7 +9,7 @@
             "email": "minhliemphp@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
       "zizaco/entrust": "5.2.x-dev",
       "laravelcollective/html":"^5.2.0",
