@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Liemphan\modules;
 
 use Illuminate\Support\ServiceProvider;
 
