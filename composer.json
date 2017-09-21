@@ -9,14 +9,16 @@
             "email": "minhliemphp@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-      "zizaco/entrust": "5.2.x-dev",
       "laravelcollective/html":"^5.2.0",
       "edvinaskrucas/notification": "5.1.*",
       "unisharp/laravel-filemanager": "^1.7",
       "yajra/laravel-datatables-oracle": "6.*",
       "developeruz/laravel-analytics": "2.3.1"
+    },
+    "require-dev": {
+        "zizaco/entrust": "5.2.x-dev"
     },
     "extra" : {
       "laravel" : {
