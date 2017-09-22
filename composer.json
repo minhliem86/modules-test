@@ -43,7 +43,8 @@
     },
     "autoload": {
         "psr-4": {
-    			"App\\Modules\\": "app/Modules"
+    			"App\\Modules\\": "app/Modules",
+                "Liemphan\\modules\\"  : "src/" 
     		}
     }
 }
